@@ -1,0 +1,285 @@
+/*GLOBAL CSS*/
+
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:0px;
+  padding:0px;
+  font-family: Tahoma;
+  box-sizing:border-box;
+}
+
+/*HEADER CSS*/
+
+header {
+  min-height:8em;
+  background-color: #5C6784;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  position:fixed;
+  width:100%;
+  top:0;
+}
+
+header h1, a, ul, li {
+  text-decoration:none;
+  padding:0px;
+  margin:0px;
+  color:white;
+}
+
+header ul {
+  list-style-type:none;
+  margin-bottom:10px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color:white;
+  align-self:center;
+  margin-left:40px;
+}
+
+header li {
+  display:inline-block;
+  padding-right:20px;
+}
+
+header a img {
+  height:5em;
+  margin-left:20px;
+}
+
+header a {
+  align-self:center;
+}
+
+header a:hover {
+  font-weight:bold;
+  color:yellow;
+}
+
+header ul:hover {
+  box-sizing:border-box;
+}
+
+/*HERO SECTION*/
+
+.heroShowcase {
+  margin-top:8em;
+  background-color:#101010;
+  min-height:600px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+#heroText {
+  width:50%;
+  margin-top:6em;
+  display:flex;
+  flex-direction:column;
+
+}
+
+#heroText h1{
+  font-size:5rem;
+  margin:0px auto;
+  margin-bottom:20px;
+  align-self:center;
+}
+
+#heroText p {
+  font-size:1.2em;
+  width:70%;
+  align-self:center;
+  text-align:center;
+}
+
+.heroShowcase button {
+  height: 3em;
+  width: 15%;
+  background-color:#5C6784;
+  border:none;
+  border-radius:15px;
+  color:white;
+  font-weight:bold;
+  margin-top:30px;
+}
+
+/*CONTENT SECTION*/
+
+.content {
+  width:90%;
+  margin:0px auto;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin-top:8em;
+  font-family:Tahoma;
+  font-weight:600;
+}
+
+.contentRow {
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+#box1 {
+  min-width:200px;
+  height:200px;
+  background-color:blue;
+  align-self:center;
+  margin-right:15px;
+}
+
+#box2 {
+  min-width:200px;
+  height:200px;
+  background-color:blue;
+  align-self:center;
+  margin-left: 15px;
+}
+
+.threeBox {
+  display:flex;
+  flex-direction:column;
+  margin-top:2em;
+}
+
+.threeBox h2 {
+  display:block;
+  box-sizing:content-box;
+  text-align:center;
+  margin-top:30px;
+  margin-bottom:70px;
+  border-bottom: 1px solid gray;
+}
+
+#threeBoxMain {
+  display:flex;
+}
+
+.threeBoxDiv{
+  margin-right:15px;
+}
+
+.box {
+  width:100%;
+  height:200px;
+  background-color:orange;
+
+}
+
+
+/*HEADER MEDIA*/
+
+@media (max-width:1150px) {
+  #heroText h1 {
+    font-size:3.5em;
+  }
+
+  #heroText p {
+    font-size:1em;
+  }
+}
+
+
+@media (max-width:850px) {
+  header h1 {
+    display:none;
+  }
+
+  header,
+  header a,
+  header ul,
+  header li,
+  header a img {
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:0px auto;
+    padding: 0px;
+  }
+
+  header li {
+    margin: 5px 5px 0px 5px;
+  }
+
+  header a img {
+    margin-top:10px;
+  }
+
+  .heroShowcase,
+  #heroText,
+  #heroText h1,
+  #heroText p {
+    margin:0 auto;
+    padding:0 auto;
+  }
+  #heroText {
+    width:70%;
+    margin-top:12em;
+  }
+  #heroText h1 {
+    font-size:3em;
+    text-align:center;
+  }
+  span {
+    display:inline-block;
+  }
+
+  #heroText p {
+    font-size:0.8em;
+  }
+
+  .heroShowcase button {
+    width:60%;
+  }
+
+  .content {
+    display:flex;
+    flex-direction:column;
+  }
+
+  .contentRow {
+    display:flex;
+    flex-direction:column;
+  }
+
+  #box1, #box2 {
+    margin:0px auto;
+    width:100%;
+  }
+
+  .threeBox {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  #threeBoxMain {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .box {
+    margin:0px auto;
+    width:50%;
+    align-self:center;
+  }
+
+}
+
+@media (max-width:350px) {
+  #heroText h1 {
+    font-size:2em;
+}
